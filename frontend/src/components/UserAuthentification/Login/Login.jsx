@@ -67,13 +67,31 @@ function Login() {
     };
 
     return (
-        <div id = "login-container">
-            <input type="text" id="username" value={enteredUsername} placeholder="Username" onChange={changeEnteredUsername}></input>
-            <input type="text" id="password" value={enteredPassword} placeholder="Password" onChange={changeEnteredPassword}></input>
-            <button id="login-button" onClick={handleButtonClick}>Login</button>
-            <div></div>
-            <Link to="/register">Register here</Link>
-        </div>
+        <main>
+            <div id="login-container">
+                <h1>Login</h1>
+                <p>Enter your credentials to access your account</p>
+                <input
+                type="text"
+                id="username"
+                value={enteredUsername}
+                placeholder="Username"
+                onChange={changeEnteredUsername}
+                ></input>
+                <input
+                type="text"
+                id="password"
+                value={enteredPassword}
+                placeholder="Password"
+                onChange={changeEnteredPassword}
+                ></input>
+                <button id="login-button" onClick={handleButtonClick}>
+                Login
+                </button>
+                <div></div>
+                <Link to="/register">Register here</Link>
+            </div>
+        </main>
     );
 }
 

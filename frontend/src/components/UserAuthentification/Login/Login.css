@@ -7,18 +7,39 @@ body {
     padding: 0;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(229, 229, 229);
+}
+
 #login-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    align-items: left;
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+}
+
+#login-container h1 {
+    margin: 0
+}
+
+#username {
+    padding-top: 30px;
+}
+
+#login-container p {
+    margin-top: 5px;
+    color: grey;
 }
 
 #username, #password {
     width: 300px;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
